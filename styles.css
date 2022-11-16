@@ -1,0 +1,118 @@
+:root
+{
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(136, 136, 206, 0.7);
+    --color-green: #37af65;
+}
+
+body::before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://img.freepik.com/foto-gratis/portatil-abierto-registro-gafas-suministros-oficina_1163-2757.jpg?w=740&t=st=1668628982~exp=1668629582~hmac=80792fd303082e1f957369e44cf33e7d9fcc650f1f3c019cbb129ca753f6de71);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body
+{
+    background: var(--color-darkblue);
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+}
+
+p
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#header
+{
+    margin-top: 50px;
+    line-height: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+#survey-form
+{
+    background: var(--color-darkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    
+}
+
+#submit
+{
+    height: 40px;
+    background:var(--color-green);
+    color: white;
+}
+
+#name-label
+{
+    margin-top: 30px;
+}
+
+.di-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-top: 25px;
+}
+
+.register-section {
+    
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.inputs
+{
+    width: 600px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.line-height
+{
+    line-height: 35px;
+}
+
+.di-form textarea
+{
+    height: 80px;
+}
+
+.submitobj
+{
+    padding-left: 52px;
+    margin-top: 25px;
+    padding-bottom: 80px;
+}
