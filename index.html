@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main id="main">
+        <section class="register-section">
+            <div id="header">
+                <h1 id="title">Formulario de Registro</h1>
+                <p>Gracias por hacer parte de nuestro equipo.</p>
+            </div>
+            <form id="survey-form" action="">
+                <div class="di-form">
+                    <label for="name" id="name-label">Nombre</label>
+                    <input class="inputs" id="name" type="text" required placeholder="Ingresa tu nombre">
+                </div>
+                <div class="di-form">
+                    <label for="email" id="email-label">Email</label>
+                    <input class="inputs" id="email" type="email" required placeholder="Ingresa tu email">
+                </div>
+                <div class="di-form">
+                    <label for="number" id="number-label">Edad (Opcional)</label>
+                    <input class="inputs" id="number" type="number" min="10" max="99" placeholder="Edad">
+                </div>
+                <div class="di-form">
+                    <label for="dropdown">¿Qué opción describe mejor su rol actual?</label>
+                    <select class="inputs" name="rol" id="dropdown" required>
+                        <option disabled selected value>Selecciona un rol</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trabajador">Trabaja tiempo completo</option>
+                        <option value="estudianteCo">Estudia tiempo completo</option>
+                        <option value="preferNo">Prefiero no decirlo</option>
+                        <option value="otro">Otro</option>
+
+                    </select>
+                </div>
+                <div class="di-form line-height" >
+                    <label for="">¿Recomendarías el curso con tus amigos?</label>
+                    <label for="definitivamente">
+                        <input id="definitivamente" value="definitivamente" type="radio" name="recomendar"">Definitivamente
+                    </label>
+                    <label for=" quizas">
+                        <input id="quizas" value="quizas" type="radio" name="recomendar">Quizás
+                    </label>
+                    <label for="no-se">
+                        <input id="no-se" value="no-se" type="radio" name="recomendar">No estoy seguro
+                    </label>
+                </div>
+                <div class="di-form line-height">
+                    <label for="dropdown2">¿Qué es lo que más te gusta de nuestro curso?</label>
+                    <select class="inputs" name="rol2" id="dropdown2" required>
+                        <option disabled selected value>Selecciona una opción</option>
+                        <option value="retos">Retos</option>
+                        <option value="proyectos">Proyectos</option>
+                        <option value="comunidad">Comunidad</option>
+                        <option value="openSource">Código Libre</option>
+                    </select>
+                </div>
+                <div class="di-form">
+                    <label for="">¿Qué te gustaría ver mejorado? (Seleccioné varias)</label>
+                    <label for="retos">
+                        <input id="retos" value="retos" type="checkbox" name="mejorar"">Retos
+                    </label>
+                    <label for=" contenido">
+                        <input id="contenido" value="contenido" type="checkbox" name="mejorar">Contenido
+                    </label>
+                    <label for="video">
+                        <input id="video" value="video" type="checkbox" name="mejorar">Video
+                    </label>
+                    <label for="audio">
+                        <input id="audio" value="audio" type="checkbox" name="mejorar">Audio
+                    </label>
+                </div>
+                <div class="di-form">
+                    <label for="comentario">¿Algún comentario o sugerencia?</label>
+                    <textarea class="inputs" name="comentario" id="comentario" placeholder="Ingresa tu comentario aquí..."></textarea>
+                </div>
+                <div class="submitobj">
+                    <button class="inputs" id="submit" type="submit">Enviar</button>
+                </div>
+                
+            </form>
+        </section>
+    <main/>
+</body>
+
+</html>
